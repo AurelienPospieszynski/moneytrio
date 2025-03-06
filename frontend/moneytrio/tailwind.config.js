@@ -2,7 +2,13 @@
 export default {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        helvetica: ["Helvetica Neue", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
